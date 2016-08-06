@@ -11,7 +11,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.carousel .item {
+  height: 300px;
+}
 
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+</style>
 </head>
 <body>
     <div class="container">   
@@ -28,7 +39,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="Content/beerandcupcakes.jpg"  alt="..."> 
+      <img src="Content/beerandcupcakes.jpg"  alt="..." width="600"> 
       <div class="carousel-caption">
         <h3>Beer at Rick's</h3>
       </div>
