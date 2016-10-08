@@ -1,18 +1,24 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .main{
 	position: fixed;
 	top:100px;
 }
-footer {
-    text-align: center; 
+
+#footer {
+   font-size:10px;
+    padding: 8px 5px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-}
-footer p {
-    margin-left: 5px;
-    display: inline-block;
-    font-size: 0.85em;
-    position: relative;
-    bottom: 5px;
-}
-footer object {
-    width: 25px;
 }
