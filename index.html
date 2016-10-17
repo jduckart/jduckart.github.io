@@ -1,60 +1,60 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
     <title>JDuckart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <!-- Optional theme -->
-     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-    
-    <link rel="stylesheet" href="Content/site.css"> 
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="Content/site.css">
 </head>
 <body>
- <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="navbar-brand"><span class="glyphicon glyphicon-pawn" aria-hidden="true"></span> JDuckart</a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-            
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-            <li>
-              <a href="resume.html">Resume</a>
-            </li>
-            </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://facebook.com/jon.duckart.1" target="_blank">The Facebook</a></li>
-            <li><a href="https://github.com/jduckart" target="_blank">GitHub</a></li>
-          </ul>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/#/main" class="navbar-brand"><span class="glyphicon glyphicon-pawn" aria-hidden="true"></span> JDuckart</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
 
+                    <li>
+                        <a href="/#/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/#/contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/#/resume">Resume</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://facebook.com/jon.duckart.1" target="_blank">The Facebook</a></li>
+                    <li><a href="https://github.com/jduckart" target="_blank">GitHub</a></li>
+                </ul>
+
+            </div>
         </div>
-      </div>
     </div>
     <div class="container main">
-           <p><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> I'm working on this. Check back later. </p>
-             <div id="footer">
-          <hr />
+
+        <div ng-view></div>
+
+        <div id="footer">
+            <hr />
             <p><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> 2016 - Portland, Oregon </p>
         </div>
     </div>
-    </div>
-   <script src="Content/jquery-3.1.0.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="bower_components/bootstrap/bootstrap/js/bootstrap.min.js"></script>
-    <!-- jQuery library -->
+    <script src="Content/jquery-3.1.0.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js">   </script>
+    <script src="module.js"></script>
+    <script src="MainController.js"></script>
 </body>
 </html>
